@@ -1,6 +1,8 @@
 import winsound
 import time
 from cmudict import cmuDict
+from addedwords import addedWords
+cmuDict.update(addedWords)
 
 while True:
     sentence = input('Enter a sentence for Theo to say: ')
